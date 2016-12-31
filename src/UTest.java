@@ -130,6 +130,7 @@ public class UTest {
         DAO_test.insertProduct(testdelet_product);
 		DAO_test.getProduct(14);
         Assert.assertNotNull(testdelet_product);
+	DAO_test.getProduct(14);
         Assert.assertEquals(14,testdelet_product.getId());
         DAO_test.deleteProduct(14); 
         // to make sure the added one has been deleted
