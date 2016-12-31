@@ -128,6 +128,7 @@ public class UTest {
         testdelet_product.setProductionDate("2010-05-12");
         testdelet_product.setExpiryDate("2018-08-11");
         DAO_test.insertProduct(testdelet_product);
+		DAO_test.getProduct(14);
         Assert.assertNotNull(testdelet_product);
         Assert.assertEquals(14,testdelet_product.getId());
         DAO_test.deleteProduct(14); 
